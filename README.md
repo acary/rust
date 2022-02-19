@@ -15,7 +15,7 @@ Study of the [Rust](https://www.rust-lang.org/) programming language
 ### 1
 
 - [Chapter 1](https://acary.github.io/rust/rust/presentation/index.html)
-- [2] - TBD
+- [2] - TBD 
 
 ###
 
