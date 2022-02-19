@@ -1,0 +1,212 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+<title>Rust</title>
+		<link rel="stylesheet" href="dist/reset.css">
+		<link rel="stylesheet" href="dist/reveal.css">
+<link rel="stylesheet" href="dist/theme/white.css" id="theme">
+		<!-- Theme used for syntax highlighted code -->
+<link rel="stylesheet" href="plugin/highlight/zenburn.min.css" id="highlight-theme"></head>
+	<body>
+		<div class="reveal">
+			<div class="slides">
+<section data-markdown  ><textarea data-template>
+[comment]: # (This presentation was made with markdown-slides)
+[comment]: # (This is a CommonMark compliant comment. It will not be included in the presentation.)
+[comment]: # (Compile this presentation with the command below)
+[comment]: # (mdslides presentation.md --include media)
+
+[comment]: # (Set the theme:)
+[comment]: # (The list of themes is at https://revealjs.com/themes/)
+[comment]: # (The list of code themes is at https://highlightjs.org/)
+
+[comment]: # "You can also use quotes instead of parenthesis"
+
+[comment]: # (Pass optional settings to reveal.js:)
+[comment]: # (markdown: { smartypants: true })
+[comment]: # (Other settings are documented at https://revealjs.com/config/)
+
+Rust | @acary | February 19, 2022
+
+# Rust
+
+Study topics
+
+</textarea></section>
+<section data-markdown  ><textarea data-template>
+
+# Chapter 1
+
+</textarea></section>
+<section data-markdown  ><textarea data-template>
+
+# Topic 1
+
+</textarea></section>
+<section data-markdown  ><textarea data-template>
+
+# Primitives
+
+## Scalar Types
+- `signed integers`: `i8, i16, i32, i64, i128 and isize (pointer size)`
+- `unsigned integers`: `u8, u16, u32, u64, u128 and usize (pointer size)`
+- `floating point`: `f32, f64`
+
+</textarea></section>
+<section data-markdown  ><textarea data-template>
+
+## Scalar Types
+- `char` Unicode scalar values like `'a', 'α' and '∞' (4 bytes each)`
+- `bool` either `true or false`
+- and the unit type `()`, whose only possible value is an empty tuple: `()`
+
+</textarea></section>
+<section data-markdown  ><textarea data-template>
+
+# Compound Types
+
+- arrays like `[1, 2, 3]`
+- tuples like `(1, true)`
+
+</textarea></section>
+<section data-markdown  ><textarea data-template>
+
+# Traits
+
+- Class:
+  - `trait Show {`
+    - `...`
+    - `(like Java or Go interfaces)`
+  - `}`
+
+</textarea></section>
+<section data-markdown  ><textarea data-template>
+
+#
+
+- Main method:
+  - `fn main() {`
+    - `println!("Hello, World!");`
+  - `}`
+
+</textarea></section>
+<section data-markdown  ><textarea data-template>
+
+# Topic 2
+
+</textarea></section>
+<section data-markdown  ><textarea data-template>
+
+#
+
+- Assignment:
+  - (variable) `=` (value or expression)
+- Operators:
+  - Equality: `==, !=`
+  - Conditional: `&&, ||`
+
+</textarea></section>
+<section data-markdown  ><textarea data-template>
+
+# Topic 3
+
+</textarea></section>
+<section data-markdown  ><textarea data-template>
+
+#
+
+- Expression:
+  - evaluates to a single value
+
+</textarea></section>
+<section data-markdown  ><textarea data-template>
+
+#
+
+- Operators:
+  - `=, +=, -=, *=, %=`
+- Arithmetic:
+  - `+, -, *, %, ==`
+- Auto-Increment:
+  - `++/--`
+
+</textarea></section>
+<section data-markdown  ><textarea data-template>
+
+#
+
+- Control flow:
+  - `for i in 0..5 {`
+    - `println!("Hello {}", i);`
+  - `}`
+
+
+</textarea></section>
+<section data-markdown  ><textarea data-template>
+
+# Boolean
+
+- `bool`: implements traits
+  - `let my_variable = true;`
+
+</textarea></section>
+<section data-markdown  ><textarea data-template>
+
+# Match
+
+- Switch:
+  - `match my_variable {`
+    - `true => println!("It is true!"),`
+    - `false => println!("Evaluated as false"),`
+  - `}`
+
+</textarea></section>
+<section data-markdown  ><textarea data-template>
+
+#
+
+- Break:
+  - `break` escapes loop
+- Continue:
+  - `continue` passes control to next iteration
+
+</textarea></section>
+<section data-markdown  ><textarea data-template>
+
+# Appendices
+
+</textarea></section>
+<section data-markdown  ><textarea data-template>
+
+# Shortcuts
+
+</textarea></section>
+			</div>
+		</div>
+
+		<script src="dist/reveal.js"></script>
+		<script src="plugin/notes/notes.js"></script>
+		<script src="plugin/markdown/markdown.js"></script>
+		<script src="plugin/highlight/highlight.js"></script>
+		<script src="plugin/math/math.js"></script>
+		<script>
+			// More info about initialization & config:
+			// - https://revealjs.com/initialization/
+			// - https://revealjs.com/config/
+Reveal.initialize({
+controls : false,
+markdown : {smartypants: true},
+controls : true,
+keyboard : true,
+hash : false,
+respondToHashChanges : false,
+				hash: true,
+				// Learn about plugins: https://revealjs.com/plugins/
+				plugins: [ RevealMarkdown, RevealHighlight, RevealNotes, RevealMath ]
+			});
+		</script>
+	</body>
+</html>
